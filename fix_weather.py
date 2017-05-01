@@ -13,8 +13,7 @@ outfile = open('fixed-'+filename, 'w')
 for line in infile:
     fields = line.split(',')
     
-    # Remove Respondent id column
-    fields = fields[1:]
+    
 
     # Discretizes how people check weather
     if 'phone' in fields[1]:
@@ -37,6 +36,11 @@ for line in infile:
         fields[6] = 2
     elif 'Very unlikely' in fields[6]:
         fields[6] = 1
+
+    if fields[6] == 4 or fields[6] == 3:
+        fields[7] = 'positive'
+    elif fields[6] == 2 or fields[6] == 1:
+        fields[7] = 'negative'
     
 # Print results to a file
     for i in range(len(fields)):
