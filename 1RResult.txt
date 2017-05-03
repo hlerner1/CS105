@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     fixed-weather-check-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.RemovePercentage-P80.0-V-weka.filters.unsupervised.attribute.Remove-R7
+Instances:    718
+Attributes:   7
+              Do you typically check a daily weather report?
+              How do you typically check the weather?
+              Age
+              What is your gender?
+              How much total combined money did all members of your HOUSEHOLD earn last year?
+              US Region
+              incluence on checking smartwatch
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Do you typically check a daily weather report?:
+	Yes	-> positive
+	No	-> positive
+(495/717 instances correct)
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         129               72.067  %
+Incorrectly Classified Instances        50               27.933  %
+Kappa statistic                          0     
+Mean absolute error                      0.2793
+Root mean squared error                  0.5285
+Relative absolute error                 67.1122 %
+Root relative squared error            117.5193 %
+Total Number of Instances              179     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.721      1.000    0.838      0.000    0.500     0.721     positive
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.500     0.279     negative
+Weighted Avg.    0.721    0.721    0.519      0.721    0.604      0.000    0.500     0.597     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 129   0 |   a = positive
+  50   0 |   b = negative
+

@@ -1,0 +1,106 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     fixed-weather-check-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.RemovePercentage-P80.0-V-weka.filters.unsupervised.attribute.Remove-R7
+Instances:    718
+Attributes:   7
+              Do you typically check a daily weather report?
+              How do you typically check the weather?
+              Age
+              What is your gender?
+              How much total combined money did all members of your HOUSEHOLD earn last year?
+              US Region
+              incluence on checking smartwatch
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                                                                     Class
+Attribute                                                                         positive negative
+                                                                                    (0.69)   (0.31)
+====================================================================================================
+Do you typically check a daily weather report?
+  Yes                                                                                 425.0    165.0
+  No                                                                                   72.0     59.0
+  [total]                                                                             497.0    224.0
+
+How do you typically check the weather?
+  mobile                                                                              123.0     42.0
+  internet                                                                            165.0     70.0
+  tv                                                                                  179.0     90.0
+  paper                                                                                16.0     10.0
+  radio                                                                                15.0     13.0
+  Newsletter                                                                            3.0      3.0
+  [total]                                                                             501.0    228.0
+
+Age
+  30 - 44                                                                             111.0     41.0
+  18 - 29                                                                              93.0     39.0
+  45 - 59                                                                             159.0     70.0
+  60+                                                                                 136.0     76.0
+  [total]                                                                             499.0    226.0
+
+What is your gender?
+  Male                                                                                206.0     98.0
+  Female                                                                              291.0    126.0
+  [total]                                                                             497.0    224.0
+
+How much total combined money did all members of your HOUSEHOLD earn last year?
+  $50000 to $74999                                                                     62.0     25.0
+  $100000 to $124999                                                                   63.0     26.0
+  $150000 to $174999                                                                   26.0     11.0
+  $25000 to $49999                                                                     70.0     29.0
+  Prefer not to answer                                                                 90.0     45.0
+  $0 to $9999                                                                          24.0     16.0
+  $10000 to $24999                                                                     40.0     19.0
+  $75000 to $99999                                                                     55.0     31.0
+  $200000 and up                                                                       34.0     14.0
+  $175000 to $199999                                                                   12.0      4.0
+  $125000 to $149999                                                                   30.0     13.0
+  [total]                                                                             506.0    233.0
+
+US Region
+  South Atlantic                                                                       95.0     30.0
+  Middle Atlantic                                                                      60.0     33.0
+  West South Central                                                                   54.0     23.0
+  Pacific                                                                              96.0     52.0
+  West North Central                                                                   30.0     15.0
+  East North Central                                                                   78.0     33.0
+  Mountain                                                                             41.0     20.0
+  New England                                                                          30.0     12.0
+  East South Central                                                                   20.0     13.0
+  [total]                                                                             504.0    231.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         126               70.3911 %
+Incorrectly Classified Instances        53               29.6089 %
+Kappa statistic                         -0.0152
+Mean absolute error                      0.3989
+Root mean squared error                  0.4455
+Relative absolute error                 95.8305 %
+Root relative squared error             99.0555 %
+Total Number of Instances              179     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.969    0.980    0.718      0.969    0.825      -0.030   0.607     0.792     positive
+                 0.020    0.031    0.200      0.020    0.036      -0.030   0.607     0.344     negative
+Weighted Avg.    0.704    0.715    0.574      0.704    0.605      -0.030   0.607     0.667     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 125   4 |   a = positive
+  49   1 |   b = negative
